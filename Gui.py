@@ -13,7 +13,9 @@ window.geometry("600x400")
 input_entry = tk.Entry(window)
 output_entry = tk.Entry(window)
 
-input_entry.grid(row=0, column=0)
+input_label = tk.Label(window, text='File to be compressed')
+input_label.grid(row=0, column=0)
+input_entry.grid(row=0, column=1)
 output_entry.grid(row=1, column=0)
 
 window.mainloop()
