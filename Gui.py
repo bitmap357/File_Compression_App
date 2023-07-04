@@ -1,5 +1,6 @@
 import tkinter as tk
 from compressionmodule import compress, decompress
+from tkinter import filedialog
 
 
 def compression(i, o):
