@@ -1,4 +1,5 @@
 import tkinter as tk
+from compressionmodule import compress, decompress
 
 window = tk.Tk()
 window.title("Compression Engine")
