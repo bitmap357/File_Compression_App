@@ -13,7 +13,7 @@ def compression(i, o):
 
 
 def decompression(i, o):
-
+    decompress(i, o)
 
 
 window = tk.Tk()
