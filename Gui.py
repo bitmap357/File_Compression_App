@@ -12,6 +12,10 @@ def compression(i, o):
     compress(i, o)
 
 
+def decompression(i, o):
+
+
+
 window = tk.Tk()
 window.title("Compression Engine")
 window.geometry("600x400")
