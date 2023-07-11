@@ -4,7 +4,8 @@ from tkinter import filedialog
 
 
 def open_file():
-    filename = filedialog.askopenfilename(initialdir='/', title='Select a file to compress')
+    filename = filedialog.askopenfilename(title='Select a file to compress')
+    print(filename)
     return filename
 
 
