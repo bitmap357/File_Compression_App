@@ -20,3 +20,27 @@
 #     file.write(decoded_data)
 #     file.close()
 
+import base64
+import zlib
+
+
+def compress(inputfile, outputfile):
+    with open(inputfile, 'rb') as file:
+        data_bytes = file.read()
+
+    compressed_data = zlib.compress(data_bytes, 9)
+    encoded_data = base64.b64encode(compressed_data)
+
+    with open(outputfile, 'wb') as file:
+        file.write(encoded_data)
+
+
+def decompress(inputfile, outputfile):
+    with open(inputfile, 'rb') as file:
+        encoded_data = file.read()
+
+    decoded_data = base64.b64decode(encoded_data)
+    decompressed_data = zlib.decompress(decoded_data)
+
+    with open(outputfile, 'wb') as file:
+        file.write(decompressed_data)
