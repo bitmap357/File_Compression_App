@@ -23,7 +23,7 @@ window.geometry("600x400")
 # input_entry = tk.Entry(window)
 # output_entry = tk.Entry(window)
 #
-input_label = tk.Label(window, text='File to be compressed')
+input_label = tk.Label(window, text='File Compression Engine')
 input_label.grid(row=0, column=0)
 #
 # output_label = tk.Label(window, text='Name of the compressed file')
