@@ -14,10 +14,7 @@ def compress(inputfile, outputfile):
 def decompress(inputfile, outputfile):
     file_content = open(inputfile, 'r').read()
     encoded_data = file_content.encode('utf-8')
-    # Add padding if necessary
-    padding = b'=' * (4 - (len(encoded_data) % 4))
-    encoded_data += padding
-    decompressed_data = zlib.decompress(base64.b64decode(encoded_data))
+    decompressed_data = zlib.decompress(base64.decodebytes(encoded_data))
     decoded_data = decompressed_data.decode('utf-8')
     file = open(outputfile, 'w')
     file.write(decoded_data)
