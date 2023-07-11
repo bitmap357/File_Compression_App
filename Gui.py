@@ -36,7 +36,7 @@ compress_button = tk.Button(window, text='COMPRESS A FILE',
 compress_button.grid(row=1, column=1)
 
 decompress_button = tk.Button(window, text='DECOMPRESS A FILE',
-                              command=lambda: decompression(open_file(), 'compressed_output1.txt'))
+                              command=lambda: decompression(open_file(), 'decompressed_output1.txt'))
 decompress_button.grid(row=2, column=1)
 
 
