@@ -32,11 +32,11 @@ input_label.grid(row=0, column=0)
 # output_entry.grid(row=1, column=0)
 
 compress_button = tk.Button(window, text='COMPRESS A FILE',
-                            command=lambda: compression(open_file(), 'compressed_output1.txt'))
+                            command=lambda: compression(open_file(), 'compressed_output2.txt'))
 compress_button.grid(row=1, column=1)
 
 decompress_button = tk.Button(window, text='DECOMPRESS A FILE',
-                              command=lambda: decompression(open_file(), 'decompressed_output1.txt'))
+                              command=lambda: decompression(open_file(), 'decompressed_output2.txt'))
 decompress_button.grid(row=2, column=1)
 
 
