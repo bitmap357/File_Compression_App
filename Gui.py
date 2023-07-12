@@ -9,13 +9,14 @@ def open_file():
     global name
     filename = filedialog.askopenfilename(title='Select a file to compress')
     name = filename.split("/")
-    print(name[-1])
+    name = name[-1]
+    print(name)
     print(filename)
     return filename
 
 
 def compression(i, o):
-    compress(i, o)
+    compress(i, o+'__compressed')
 
 
 def decompression(i, o):
